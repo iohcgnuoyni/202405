@@ -3,10 +3,16 @@
   const md = new MobileDetect(window.navigator.userAgent);
 
   if (md.is('AndroidOS')) {
-    window.location.href = 'https://play.google.com/store/apps/details?id=com.google.android.youtube';
+    setTimeout(function() {
+      window.open('https://play.google.com/store/apps/details?id=com.google.android.youtube', '_blank');
+    }, 1000); // 1000 milliseconds = 1 second
   } else if (md.is('iOS')) {
-    window.location.href = 'https://apps.apple.com/kr/app/youtube/id544007664';
+    setTimeout(function() {
+      window.open('https://apps.apple.com/kr/app/youtube/id544007664', '_blank');
+    }, 1000); 
   } else {
-    window.location.href = 'https://youtube.com', '_blank');
+    setTimeout(function() {
+      window.location.href = 'https://youtube.com', '_blank');
+    }, 1000); 
   }
 </script>
