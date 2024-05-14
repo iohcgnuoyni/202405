@@ -3,10 +3,10 @@
   const md = new MobileDetect(window.navigator.userAgent);
 
   if (md.is('AndroidOS')) {
-      window.open('https://play.google.com/store/apps/details?id=com.google.android.youtube', '_blank');
+    window.location.href = 'https://play.google.com/store/apps/details?id=com.google.android.youtube';
   } else if (md.is('iOS')) {
-      window.open('https://apps.apple.com/kr/app/youtube/id544007664', '_blank');
+    window.location.href = 'https://apps.apple.com/kr/app/youtube/id544007664';
   } else {
-      window.location.href = 'https://youtube.com', '_blank');
+    window.location.href = 'https://youtube.com', '_blank');
   }
 </script>
